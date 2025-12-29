@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Server, Key, User, Mail, Shield, Check } from "lucide-react";
+import { Server, Key, User, Mail, Shield, Check, ExternalLink, Play } from "lucide-react";
 import { toast } from "sonner";
 
 const HostYourBot = () => {
@@ -65,10 +65,22 @@ const HostYourBot = () => {
           <form onSubmit={handleSubmit} className="glass-strong rounded-2xl p-8 space-y-6">
             {/* Bot Token */}
             <div className="space-y-2">
-              <label className="flex items-center gap-2 text-sm font-medium">
-                <Key className="w-4 h-4 text-primary" />
-                Bot Token <span className="text-destructive">*</span>
-              </label>
+              <div className="flex items-center justify-between">
+                <label className="flex items-center gap-2 text-sm font-medium">
+                  <Key className="w-4 h-4 text-primary" />
+                  Bot Token <span className="text-destructive">*</span>
+                </label>
+                <a
+                  href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs text-primary hover:text-primary/80 transition-colors group"
+                >
+                  <Play className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" />
+                  How to find your token
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              </div>
               <Input
                 type="password"
                 name="token"
