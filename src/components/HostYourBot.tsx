@@ -71,7 +71,7 @@ const HostYourBot = () => {
                   Bot Token <span className="text-destructive">*</span>
                 </label>
                 <a
-                  href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID"
+                  href="https://youtube.com/shorts/-ds8_JRmuuw?si=xLO5Uzmky1H7ujmH"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-xs text-primary hover:text-primary/80 transition-colors group"
